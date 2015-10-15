@@ -15,7 +15,7 @@ const RANDOM_MAX = 156 //78 iterations until Number.MAX_SAFE_INTEGER
 
 const HTTP_TIMEOUT = 2000 //ms
 
-const MEM_MAX = 5 * Math.pow(10, 8) //~500mb, default 
+const MEM_MAX = 5e8 //~500mb, default 
 
 app
 .use(bodyParser.json())
