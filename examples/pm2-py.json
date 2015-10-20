@@ -1,0 +1,8 @@
+{
+  "apps": [{
+    "name": "Api-python",
+    "script": "./server.py",
+    "exec_mode": "fork",
+    "exec_interpreter": "python"
+  }]
+}
