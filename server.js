@@ -1,6 +1,5 @@
 'use strict';
 var express = require('express')
-var pusage = require('pidusage')
 var bodyParser = require('body-parser')
 var timeout = require('connect-timeout')
 var fibonacci = require('./lib/fibonacci.js')
