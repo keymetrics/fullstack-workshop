@@ -1,4 +1,12 @@
 
+var pmx = require('pmx').init({
+  http    : true,
+  network : true,
+  ports   : true
+});
+
+var keymetrics = require('./keymetrics.js');
+
 var express    = require('express');
 var bodyParser = require('body-parser');
 var timeout    = require('connect-timeout');
@@ -117,7 +125,7 @@ app
     return res.send({error: err.message});
   }
 
-  return next()
+  return next();
 })
 
 .use(function(req, res, next) {
