@@ -29,7 +29,7 @@
    */
   deploy : {
     production : {
-      user : "shant",
+      user : process.env.USER,
       host : "127.0.0.1",
       ref  : "origin/deployment",
       repo : "https://github.com/keymetrics/fullstack-workshop.git",
