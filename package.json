@@ -2,10 +2,10 @@
   "name": "fullstack-workshop",
   "version": "1.0.0",
   "description": "Apidoc fullstack workshop pm2",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "bash test",
-    "doc": "apidoc -f server.js -o doc"
+    "doc" : "apidoc -f server.js -o doc"
   },
   "author": "soyuka",
   "license": "WTFPL",
