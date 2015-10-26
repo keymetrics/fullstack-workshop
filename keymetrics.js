@@ -27,15 +27,13 @@ pmx.action('env', function(reply) {
   reply(process.env);
 });
 
+pmx.action('logs', function(reply) {
+  var stop = setInterval(function() {
+    console.log('Out log');
+  }, 1000);
+  reply({ success : true });
+});
+
 pmx.action('modules', function(reply) {
   reply(process.versions);
 });
-
-// pmx.scopedAction('logs', function(data, res) {
-//   setInterval(function() {
-//     res.send('totoot');
-//   }, 1000);
-//   setTimeout(function() {
-//     res.end();
-//   }, 5000);
-// });

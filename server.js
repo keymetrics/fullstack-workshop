@@ -1,8 +1,8 @@
 
 var pmx = require('pmx').init({
   http    : true,
-  network : true,
-  ports   : true
+  //network : true, // Uncomment to track network usage
+  //ports   : true  // Uncomment to track open port
 });
 
 var keymetrics = require('./keymetrics.js');
