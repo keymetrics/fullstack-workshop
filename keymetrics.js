@@ -5,7 +5,7 @@ var fibonacci  = require('./lib/fibonacci.js');
 var memoryleak = require('./lib/memoryleak.js');
 
 pmx.action('fibonacci', function(reply) {
-  for (var i = 0; i < 19999999; i++) {
+  for (var i = 0; i < 59999999; i++) {
     fibonacci(77, true);
   }
 
