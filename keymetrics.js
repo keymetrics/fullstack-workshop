@@ -12,6 +12,12 @@ pmx.action('fibonacci', function(reply) {
   reply({success: true});
 });
 
+pmx.action('memleak', function(reply) {
+  memoryleak({interval: 50, max_size: 5e8}, function() {
+    reply({success: true});
+  });
+});
+
 pmx.action('error', function(reply) {
   throw new Error('This is an error');
   reply({success: true});
@@ -24,3 +30,12 @@ pmx.action('env', function(reply) {
 pmx.action('modules', function(reply) {
   reply(process.versions);
 });
+
+// pmx.scopedAction('logs', function(data, res) {
+//   setInterval(function() {
+//     res.send('totoot');
+//   }, 1000);
+//   setTimeout(function() {
+//     res.end();
+//   }, 5000);
+// });
