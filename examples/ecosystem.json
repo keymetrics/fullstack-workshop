@@ -5,7 +5,6 @@
     "script": "./server.js",
     "watch": "*.js",
     "max_memory_restart": "500M",
-    "max_restarts": 2,
     "exec_mode": "cluster"
   }]
 }
